@@ -1109,4 +1109,46 @@ def jadx():
 	os.system('dpkg -i jadx-0.6.1_all.deb?raw=true')
 	os.system('rm -rf jadx-0.6.1_all.deb?raw=true')
 	print '###### Done'
+	print "###### Type 'jadx' to start."
+	backtomenu_option()
+
+def pwnedornot():
+	print '\n###### Installing pwnedOrNot'
+	os.system('apt update && apt upgrade')
+	os.system('apt install git python')
+	os.system('python -m pip install requests')
+	os.system('git clone https://github.com/thewhiteh4t/pwnedOrNot')
+	os.system('mv pwnedOrNot ~')
+	print '###### Done'
+	backtomenu_option()
+
+def maclook():
+	print '\n###### Installing Mac-Lookup'
+	os.system('apt update && apt upgrade')
+	os.system('apt install git python')
+	os.system('python -m pip install requests')
+	os.system('git clone https://github.com/T4P4N/Mac-Lookup')
+	os.system('mv Mac-Lookup ~')
+	print '###### Done'
+	backtomenu_option()
+
+def f4k3():
+	print '\n###### Installing F4K3'
+	os.system('apt update && apt upgrade')
+	os.system('apt install dpkg wget')
+	os.system('wget https://github.com/Gameye98/Gameye98.github.io/blob/master/package/f4k3_1.0_all.deb')
+	os.system('dpkg -i f4k3_1.0_all.deb')
+	os.system('rm -rf f4k3_1.0_all.deb')
+	print '###### Done'
+	print "###### Type 'f4k3' to start."
+	backtomenu_option()
+
+def katak():
+	print '\n###### Installing Katak'
+	os.system('apt update && apt upgrade')
+	os.system('apt install git python2')
+	os.system('python2 -m pip install requests progressbar')
+	os.system('git clone https://github.com/Gameye98/Katak')
+	os.system('mv Katak ~')
+	print '###### Done'
 	backtomenu_option()
